@@ -1,0 +1,369 @@
+html, body{
+    background-color: #f1f3f6;
+    height: 100%;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #2874f0;
+    position: sticky;
+    top: 0;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 99;
+}
+.middle{
+    position: inherit;
+    display: flex;
+    color: #f0f0f0;
+    align-items: center;
+    font-weight: 500;
+    width: 65%;
+    font-size: 14px;
+    letter-spacing: -2px;
+    justify-content: space-evenly;
+}
+.flipkart-icon > a{
+    display: block;
+    text-decoration-line: none;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+.flipkart-icon a:hover{
+    text-decoration:underline;
+    text-decoration-color: #f0f0f0;
+}
+.search-bar{
+    display: flex;
+}
+.search-bar button{
+    outline: none;
+    border-style: none;
+}
+#search-tab{
+    background-color: #f0f0f0;
+    font-size: 19px;
+    width: 35rem;
+    height: 2.2rem;
+    border-radius: 2px;
+    outline: none;
+    padding: 11px;
+    border-style: none;
+}
+
+#search-icon{
+    color: #2874f0;
+    width: 4rem;
+    height: 2rem;
+    font-size: 27px;
+    position: relative;
+    border-style: none;
+    float: right;
+    outline: none;
+    border-radius: 2px;
+}
+.login button{
+    background-color: #f0f0f0;
+    color: #2874f0;
+    border: none;
+    width: 137px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 3px;
+    letter-spacing: 0px;
+}
+.fourth a{
+    text-decoration-line: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -2px;
+}
+.fourth a:hover{
+    text-decoration:none;
+    text-decoration-color: #f0f0f0;
+}
+.dropdown-menu{
+    width: 11rem;
+    height: 9rem;
+    border: none;
+  
+}
+.dropdown-item{
+    text-decoration-line: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -1px;
+    
+}
+#dropdown-button{
+    outline: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -2px;
+    border: none;
+}
+.category{
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    width: 100%;
+    height: 7rem;
+}
+.category-items{
+    width: 80%;
+    height: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.category-items ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    position: relative;
+    height: 7rem;
+    
+}
+.category-items li{
+    text-align: center;
+    font-weight: 550;
+    font-size: 12px;
+    
+}
+.category-items li img{
+    height: 4rem;
+    width: 3rem;
+    
+}
+.category-items li:hover{
+    color: #2874f0;
+}
+.product-deals{
+    width: 100%;
+    height: 20rem;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+     
+}
+.left{
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    width: 65%;
+    height: 20rem;
+    margin-top: 2rem;
+    
+}
+.top{
+    width:100%;
+    height: 4rem;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.container{
+    background-color: #fff;
+    align-items: center;
+    width:100%;
+    height: 4rem;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 18px;
+    padding-left: 30px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    
+}
+
+.container button{
+    
+    float: right;
+    font-size: 14px;
+    padding: 5px;
+    margin: 1px;
+    left: 9%;
+    border-radius: 0.5px;
+
+}
+.bottom{
+    width: 100%;
+    height: 79%;
+    margin-top: 1rem;
+}
+.carousel{
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    z-index: 1;
+}
+.carousel-item{
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+.card-wrapper{
+    display: flex;
+}
+.card{
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    text-align: center;
+    border: none;
+    position: relative;
+    /*top: 50px;*/
+}
+.card img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 6rem;
+    height: 7rem;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: left right ease-in-out 1s;
+}
+.card img:hover{
+    right: 10px;
+    left: 10px;
+    bottom: 2px;
+}
+.card-body{
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-body p:nth-child(3){
+   color: #a0a0a0;
+}
+.card-text{
+    color: #388e3c;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: #2874f0;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50px);
+}
+.right{
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    width: 15%;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-left: 27px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+.product-box{
+    width: 84.5%;
+    height: 20rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    align-items: center;
+}
+.top2{
+    width:100%;
+    height: 20%;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    margin-top: -17rem;
+    
+}
+.container2{
+    background-color: #fff;
+    align-items: center;
+    width:100%;
+    height: 4rem;
+    font-size: 11px;
+    font-weight: 550;
+    padding: 12px;
+    padding-left: 30px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    
+}
+.bottom2{
+    width: 100%;
+    height: 80%;
+    margin-top: 1rem;
+    
+}
+.container2 button{
+    float: right;
+    font-size: 14px;
+    padding: 5px;
+    position: relative;
+    margin-top: -8%;
+    top: 2%;
+    width: 10%;
+    border-radius: 0.5px;
+}
+@media screen and  (max-width:1024px) {
+    .navbar{
+        
+        width: 100%;
+    }
+    .middle{
+        
+        width: 80%;
+        
+        justify-content: space-between;
+        font-size: 5px;
+        flex-direction: row;
+        
+        align-items: center;
+    }
+    #search-tab{
+        width: 13rem;
+        height: 1rem;
+        font: small;
+    }
+    #search-icon{
+        width: 4rem;
+        height: 1rem;
+        font-size: small;
+    }
+    .product-deals{
+        height: 15rem;
+    }
+    .container{
+        font-size: 16px;
+        height: 5rem;
+    }
+    .left{
+        height: 13rem;
+    }
+    .card-wrapper{
+        height: 15rem;
+    }
+    .card{
+        height: 80%;
+    }
+    .card-body{
+        line-height: 1;
+        font-size: 13px;
+    }
+}
